@@ -19,12 +19,16 @@ jobs:
             make install
             wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 
             chmod +x /bin/hadolint
+            export PATH=$PATH:/root/.local/bin
+      - save_cache:
+          paths:
+            - ./venv
+          key: v1-dependencies-{{ checksum "requirements.txt" }}
             
       - run:
           name: Running Lint
           command: |
             . venv/bin/activate
-            export PATH=$PATH:/root/.local/bin
             make lint
 
 workflows:
