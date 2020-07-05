@@ -25,6 +25,7 @@ jobs:
       - run:
           name: Running Lint
           command: |
+            pip install pylint
             . venv/bin/activate
             make lint
 
