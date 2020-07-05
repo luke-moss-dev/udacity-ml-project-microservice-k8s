@@ -29,6 +29,7 @@ jobs:
           command: |
             export PATH=$PATH:/root/.local/bin
             . venv/bin/activate
+            python -m pip install pylint
             make lint
 
 workflows:
