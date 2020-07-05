@@ -5,7 +5,7 @@ jobs:
   build:
     docker:
       - image: python:3.7.3-stretch
-    working_directory: ~/repo
+    working_directory: ~/udacity-ml-project-microservice-k8s
     steps:
       - checkout
       - restore_cache:
