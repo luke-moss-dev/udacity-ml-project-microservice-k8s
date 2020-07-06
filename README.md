@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+![CircleCI](https://img.shields.io/circleci/build/github/luke-moss-dev/udacity-ml-project-microservice-k8s?style=for-the-badge)(https://app.circleci.com/pipelines/github/luke-moss-dev/udacity-ml-project-microservice-k8s/)
 
 ## Project Overview
 
